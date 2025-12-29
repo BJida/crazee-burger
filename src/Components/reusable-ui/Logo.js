@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export default function Logo() {
   return (
-    <LoginFormStyleld><h1>CRAZEE</h1> 
+    <LogoStyled><h1>CRAZEE</h1> 
     <img src="/images/logo-orange.png" alt="Logo Burger" />
-    <h1>BURGER</h1></LoginFormStyleld>
+    <h1>BURGER</h1></LogoStyled>
   )
 }
-const LoginFormStyleld = styled.div`
+const LogoStyled = styled.div`
   display: flex;
   align-items: center;
   transform: scale(2.5);
