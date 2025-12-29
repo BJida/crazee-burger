@@ -7,7 +7,7 @@ export default function LoginPage() {
   // Affichage (render)
     return (
     <LoginPageStyled>
-      <Logo />
+       <Logo />
        <LoginForm/>
       </LoginPageStyled>
     )
@@ -27,6 +27,7 @@ const LoginPageStyled = styled.div`
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
+    
     position: absolute;
     top: 0;
     left: 0;
