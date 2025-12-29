@@ -26,7 +26,7 @@ const handleSubmit  = (event) => {
       
         <div >
           <h1>Bienvenue chez nous !</h1>
-          <br />
+          <hr />
           <h2>Connectez-vous</h2>
         </div>
       
@@ -46,6 +46,26 @@ const handleSubmit  = (event) => {
 
 const LoginFormStyled = styled.div`
  background: green; 
+ text-align: center;
+ max-width: 500px;
+ min-width: 400px;
+ margin: 2.5rem 2rem;
+ border-radius: 5px;
+ font-family: "Amatic SC", cursive;
+ hr{
+  border: 1px solid #f56a2c;
+  margin-bottom: 40px;
+ }
+ h1{
+  color: white;
+  font-size: 40px;
+ }
+ h2{
+  color: #8e8b8b;
+  margin: 20px 10px 10px;
+  color: white;
+  font-size: 36px;
+ }
 `;
 /** 4 méthodes pour ajouter du style à un composant 
  * 1. inline style
