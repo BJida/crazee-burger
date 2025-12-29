@@ -1,6 +1,7 @@
 
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import styled from 'styled-components';
 
 export default function LoginForm() {
   // State
@@ -21,7 +22,7 @@ const handleSubmit  = (event) => {
   //const titreH2Style={backgroundColor:"blue", color:"white", fontSize:"15px"};
   // Affichage (render)
     return (
-    <form action="submit" onSubmit={handleSubmit}>
+    <LoginFormStyled action="submit" onSubmit={handleSubmit}>
       
         <div >
           <h1>Bienvenue chez nous !</h1>
@@ -39,11 +40,13 @@ const handleSubmit  = (event) => {
         {/* <Link to='/order'>vers OrderPage</Link> */}
 
       
-    </form>
+    </LoginFormStyled>
   )
 }
 
-
+const LoginFormStyled = styled.div`
+ background: green; 
+`;
 /** 4 méthodes pour ajouter du style à un composant 
  * 1. inline style
  * 2. object style
