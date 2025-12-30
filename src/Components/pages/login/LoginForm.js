@@ -54,7 +54,7 @@ const handleSubmit  = (event) => {
   )
 }
 
-const LoginFormStyled = styled.div`
+const LoginFormStyled = styled.form`
  
  text-align: center;
  max-width: 500px;
@@ -70,16 +70,19 @@ const LoginFormStyled = styled.div`
   margin-left: 20px;
   margin-right: 20px;
  }
+
  h1{
   color: white;
   font-size: 40px;
  }
+
  h2{
   color: #8e8b8b;
   margin: 20px 10px 10px;
   color: white;
   font-size: 36px;
  }
+
  .input-with-icon{
   /* border: 1px solid red; */
   background-color: #fff;
@@ -106,6 +109,7 @@ const LoginFormStyled = styled.div`
     color: lightgray;
   }
  }
+ 
  .button-with-icon{
   width: 100%;
   border: 1px solid red;
