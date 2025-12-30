@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default function Input({value, onChange,Icon, ...extraProps}) {
 console.log("restProps: ", extraProps)
   return (
-     <InputStyled>
+          <InputStyled>
                 {Icon && Icon}
                 <input 
                 value={value}
@@ -11,7 +11,7 @@ console.log("restProps: ", extraProps)
                 type="text"
                 {...extraProps}
                 />
-              </InputStyled>
+          </InputStyled>
   )
 }
 

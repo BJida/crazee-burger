@@ -1,10 +1,11 @@
 
 import { useState } from 'react'
-import { IoChevronForward } from 'react-icons/io5';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import TextInput from './TextInput';
+import TextInput from '../../reusable-ui/TextInput';
 import { BsPersonCircle } from 'react-icons/bs';
+import PrimaryButton from '../../reusable-ui/PrimaryButton';
+import { IoChevronForward } from 'react-icons/io5';
 
 export default function LoginForm() {
   // State
@@ -39,12 +40,11 @@ const handleSubmit  = (event) => {
           placeholder={'Entrez votre prénom'} 
           Icon={<BsPersonCircle className='icon'/>}
           required
-          />         
-         
-          <button className='button-with-icon'>
-            <span>Accéder à mon espace</span>
-            <IoChevronForward className='icon'/>
-            </button>
+          />  
+          <PrimaryButton
+          label={"Accéder à mon espace"}
+          Icon={ <IoChevronForward className='icon'/>}
+          />
         </div>
         {/* <Link to='/order'>vers OrderPage</Link> */}
 
@@ -81,44 +81,6 @@ const LoginFormStyled = styled.form`
   color: white;
   font-size: 36px;
  }
-
- .button-with-icon{
-  width: 100%;
-  border: 1px solid red;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  white-space: nowrap;
-  text-decoration: none;
-  line-height: 1;
-
-  width: 90%;
-  margin-bottom: 40px;
-  padding: 18px 24px;
-  border-radius: 5px;
-  font-size: 15px;
-  font-weight: 800;
-  color: white;
-  background-color: #ff9f1b;
-  border: 1px solid  #ff9f1b;
-
-  &:hover:not(:disabled){
-    background-color: white;
-    color:  #ff9f1b;
-    border: 1px solid  #ff9f1b;
-    transition: all 200ms ease-out ;
-  }
-  &:active{
-    color: white;
-    background-color:  #ff9f1b;
-    border: 1px solid  #ff9f1b;
-  }
-
-  &:disabled{
-    opacity: 0.6;
-    cursor: not-allowed;
-  }
   .icon{
     display: flex;
     justify-content: center;
@@ -126,8 +88,7 @@ const LoginFormStyled = styled.form`
     font-size: 15px;
     margin-left: 10px;
   }
- }
-`;
+ `;
 /** 4 méthodes pour ajouter du style à un composant 
  * 1. inline style
  * 2. object style
