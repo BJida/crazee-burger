@@ -1,6 +1,7 @@
 
 import { useState } from 'react'
 import { BsPersonCircle } from 'react-icons/bs';
+import { IoChevronForward } from 'react-icons/io5';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -41,7 +42,10 @@ const handleSubmit  = (event) => {
             required
             />
           </div>
-          <button>Accéder à mon espace</button>
+          <button className='button-with-icon'>
+            <span>Accéder à mon espace</span>
+            <IoChevronForward className='icon'/>
+            </button>
         </div>
         {/* <Link to='/order'>vers OrderPage</Link> */}
 
@@ -51,7 +55,7 @@ const handleSubmit  = (event) => {
 }
 
 const LoginFormStyled = styled.div`
- background: green; 
+ 
  text-align: center;
  max-width: 500px;
  min-width: 400px;
@@ -59,9 +63,12 @@ const LoginFormStyled = styled.div`
  margin: 2.5rem 2rem;
  border-radius: 5px;
  font-family: "Amatic SC", cursive;
+
  hr{
   border: 1px solid #f56a2c;
   margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
  }
  h1{
   color: white;
@@ -80,7 +87,7 @@ const LoginFormStyled = styled.div`
   display: flex;
   align-items: center;
   padding: 18px 24px;
-  margin: 18px 0;
+  margin: 18px 20px;
 
   .icon{
     font-size:15px ;
@@ -91,10 +98,57 @@ const LoginFormStyled = styled.div`
     border: none;
     font-size: 15px;
     color: #17161a;
+    /* width: 100%;
+    display: flex; */
   }
   &::placeholder{
     background: white;
     color: lightgray;
+  }
+ }
+ .button-with-icon{
+  width: 100%;
+  border: 1px solid red;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+  text-decoration: none;
+  line-height: 1;
+
+  width: 90%;
+  margin-bottom: 40px;
+  padding: 18px 24px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 800;
+  color: white;
+  background-color: #ff9f1b;
+  border: 1px solid  #ff9f1b;
+
+  &:hover:not(:disabled){
+    background-color: white;
+    color:  #ff9f1b;
+    border: 1px solid  #ff9f1b;
+    transition: all 200ms ease-out ;
+  }
+  &:active{
+    color: white;
+    background-color:  #ff9f1b;
+    border: 1px solid  #ff9f1b;
+  }
+
+  &:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 10px;
   }
  }
 `;
