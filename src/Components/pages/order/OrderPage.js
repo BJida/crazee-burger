@@ -14,7 +14,6 @@ export default function OrderPage() {
         <div className="container">
           <Navbar username={username}/>
           <Main/>
-          
         </div>
     </OrderPageStyled>
    
