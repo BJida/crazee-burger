@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { theme } from "../../../theme";
+import { theme } from "../../../../theme";
 
 export default function Main() {
   return (
     <MainStyled className="main">
-      <div className="basket">basket</div>
+      {/* <div className="basket">basket</div> */}
       <div className="menu">Menu</div>
     </MainStyled>
   )
