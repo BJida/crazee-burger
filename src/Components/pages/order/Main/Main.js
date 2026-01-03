@@ -25,6 +25,7 @@ const MainStyled = styled.div`
       // will be used for the basket later
       /* grid-template-columns:25% 1fr; */
       grid-template-columns: 1fr;
+      overflow-y: scroll;
       /* .basket{
         background: pink;
       } */
