@@ -5,7 +5,7 @@ import Menu from "./Menu";
 export default function Main() {
   return (
     <MainStyled className="main">
-      <div className="basket">basket</div>
+      {/* <div className="basket">basket</div> */}
       <Menu />
       
     </MainStyled>
@@ -13,7 +13,7 @@ export default function Main() {
 }
 const MainStyled = styled.div`
       background: ${theme.colors.background_white};
-      border: 5px solid green;
+      /* border: 5px solid green; */
       flex: 1;/* or you can also use this :height: calc(95vh - 10vh);*/ 
       display: flex;
 
@@ -22,10 +22,12 @@ const MainStyled = styled.div`
       box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2) inset ;
 
       display: grid;
-      grid-template-columns: 25% 1fr;
-      .basket{
+      // will be used for the basket later
+      /* grid-template-columns:25% 1fr; */
+      grid-template-columns: 1fr;
+      /* .basket{
         background: pink;
-      }
+      } */
 
      
 `;

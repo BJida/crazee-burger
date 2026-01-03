@@ -15,9 +15,9 @@ const PrimaryButtonStyled = styled.button`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  white-space: nowrap;
-  text-decoration: none;
+  position: relative; //is used in case you want to create interactive icons where an icon replace the text Label. 
+  white-space: nowrap; //prevents the text label from wrapping to the next line.
+  text-decoration: none;//removes the text decoration in case you're applying the .btn class to a Link.
   line-height: 1;
 
   width: 90%;
