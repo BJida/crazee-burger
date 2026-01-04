@@ -1,13 +1,13 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { fakeMenu1 } from "../../../../fakeData/fakeMenu";
+import { fakeMenu2 } from "../../../../fakeData/fakeMenu";
 import { theme } from "../../../../theme";
 import Product from "./Product";
 
 
 export default function Menu() {
     // state
-    const [menu, setMenu] = useState(fakeMenu1);
+    const [menu, setMenu] = useState(fakeMenu2);
 
   return (
     <MenuStyled>
