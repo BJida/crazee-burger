@@ -11,8 +11,10 @@ export default function Menu() {
   return (
     <MenuStyled>
         {menu.map((product)=>{
-            return <Product title={product.title} imageSource={product.imageSource} price={product.price}/>
-            
+            return (
+            //<Product title={product.title} imageSource={product.imageSource} price={product.price}/>
+            <Product {...product}/>
+            )
         })}
     </MenuStyled>
   )
