@@ -13,7 +13,7 @@ export default function Menu() {
 
   return (
     <MenuStyled>
-        {menu.map(({id, title, imageSource, price})=>{
+        {menu.map(({id, title, imageSource, leftDescription})=>{
             return (
             <div className="produit">
               <div className="image">
@@ -22,7 +22,7 @@ export default function Menu() {
               <div className="info-text">
                 <div className="title">{title}</div>
                 <div className="description">
-                  <div className="price">{price}</div>
+                  <div className="price">{leftDescription}</div>
                   <button className="add-button">Ajouter</button>
                 </div>
               </div>
