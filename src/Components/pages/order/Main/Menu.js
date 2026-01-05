@@ -17,12 +17,12 @@ export default function Menu() {
             return (
             <div className="produit">
               <div className="image">
-                <img src={product.imageSource} alt={product.title} />
+                <img src={imageSource} alt={title} />
               </div>
               <div className="info-text">
-                <div className="title">{product.title}</div>
+                <div className="title">{title}</div>
                 <div className="description">
-                  <div className="price">{product.price}</div>
+                  <div className="price">{price}</div>
                   <button className="add-button">Ajouter</button>
                 </div>
               </div>
